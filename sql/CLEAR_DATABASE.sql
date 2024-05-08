@@ -1,3 +1,5 @@
+use Event_DB;
+
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM Sponsored_events;
 DELETE FROM Speaks_on;

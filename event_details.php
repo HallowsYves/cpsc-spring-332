@@ -119,7 +119,7 @@ mysqli_data_seek($user_query, 0);
         <p><?php echo $event['Event_type'] ?></p>
         <a href="home.php"> Homepage.</a>
         <?php if ($logged_in_user_email === $managing_user_email['User_email']) { ?>
-            <a href="delete_event.php?managing_user_email=<?php echo $managing_user_email['User_email'] ?>"><button class="btn">Delete Event</button></a>
+            <a href="delete_event.php?event_id=<?php echo $_GET['event_id'] ?>"><button class="btn">Delete Event</button></a>
 
             <a href="toggle_publish_event.php?is_event_published=<?php echo $is_event_published; ?>&event_id=<?php echo $_GET['event_id'] ?>"><button class="btn"><?php if ($is_event_published) { ?>Unpublish Event <?php } else { ?>Publish Event <?php } ?></button></a>
 
